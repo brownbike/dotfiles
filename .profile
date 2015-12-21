@@ -12,7 +12,7 @@ export HISTFILESIZE=1000
 export PYTHONPATH="/usr/local/lib/python":$PYTHONPATH
 export NODE_PATH="/usr/local/lib/node_modules":$NODE_PATH
 
-export PATH="$HOME/.rbenv/bin:/usr/local/bin:/usr/local/share/python:/usr/local/share/npm/bin:/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:$PATH"
 
 echo $PATH | grep -q -s "/usr/local/sbin"
 if [ $? -eq 1 ] ; then
@@ -69,3 +69,7 @@ alias pg_stop="pg_ctl stop"
 
 # git
 alias gs="git status"
+
+#mysql
+alias mysql_start='mysql.server start'
+alias mysql_stop='mysql.server stop'
